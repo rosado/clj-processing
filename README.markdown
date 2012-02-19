@@ -1,6 +1,8 @@
 # Processing for Clojure #
 
-This lib is a wrapper for the [Processing][] project. Mixture of Clojure and Processing enables you to do live-coding and experiment easily.
+This lib is a wrapper for the [Processing][] project. Mixture of
+Clojure and Processing enables you to do live-coding and experiment
+easily.
 
 Most of the function are covered; some have a slightly different name
 than in Java (partly because Clojure is confused by methods of the
@@ -9,13 +11,19 @@ accessible.
 
 ## How To Use It? ##
 
-If you're using Leiningen, just add the following line to your
-dependencies list:
+*NOTE*: project is currently going through some cleanups when it comes
+ to lein/maven compatibility. Untill that's finished, you pretty much
+ have to setup your project manually.
 
-   [org.clojars.automata/rosado.processing "1.1.0"]
+If you use mave or leiningn, just add the following to your
+`project.clj`:
 
-Otherwise, add your `core.jar` file from the Processing installation to your
-CLASSPATH.
+        [processing-core/processsing.core "0.1.0"]
+
+## Manual Setup
+
+Add Processing's `core.jar` to your classpath along with
+clj-processing jar and you're ready to go.
 
 To use the OpenGL features, you also have to add `gluegen-rt.jar`,
 `jogl.jar` and `opengl.jar` from the
@@ -45,6 +53,12 @@ mouse handling methods to take one argument (which is just an instance
 of java.awt.event.MouseEvent class) and get all needed information
 (like mouse position etc) from that object. Also, accessing instance
 fields of the PApplet class from within proxy doesn't work.
+
+## License
+
+`processing.core` is distributed under Common Public License Version
+1.0. The official Processing.org's core.jar is distributed under LGPG
+and its code can be found on http://processing.org/
 
 ## TODO ##
 
