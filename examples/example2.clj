@@ -27,7 +27,7 @@
 
 (defn setup []
   "Runs once."
-  (size 200 200)
+;  (size 200 200)
   (smooth)
   (no-stroke)
   (fill 226)
@@ -41,6 +41,5 @@
   :draw draw
   :size [200 200])
 
-(run example2)
-
-;; (stop example2)
+;; (applet-stop example2)
+;; (applet-close example2)
