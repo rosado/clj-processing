@@ -1,3 +1,12 @@
+# NEW HOME, NEW NAME #
+
+In March 2012 clj-processing project changed its home and name to
+[Quil][]. You can find the new project here:
+
+          https://github.com/quil/quil
+
+This repository is no longer developed or maintained.
+
 # Processing for Clojure #
 
 This lib is a wrapper for the [Processing][] project. Mixture of
@@ -67,6 +76,7 @@ and its code can be found on http://processing.org/
 
 [processing]:http://processing.org/
 [cljscript]:http://en.wikibooks.org/wiki/Clojure_Programming/Getting_Started#Create_clj_Script
+[quil]:https://github.com/quil/quil
 
 ## Contributors ##
 
